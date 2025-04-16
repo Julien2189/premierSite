@@ -1,0 +1,191 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+}
+body , html{
+    height: 100%;
+    width: 100%;
+    color: rgb(114, 107, 209);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(39, 41, 43);
+}
+
+header {
+    display: flex;
+    background-color: rgb(66, 65, 75);
+    height: 10%;
+    padding-top: 10px;
+}
+a {
+    text-align: center;
+    margin: 10px ;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+i {
+    color: rgb(207, 197, 197);
+}
+ul {
+    list-style: none;
+}
+.reseau-social  {
+    flex: 1;
+}
+.reseau-social ul {
+    display: flex ; 
+    justify-content:end;
+    padding-right:20px ;
+    gap: 20px;
+}
+
+nav {
+    text-align: center;
+    justify-content: space-between;
+    
+    flex-grow: 2;
+}
+nav ul {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    list-style: none;
+}
+section {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 20px;
+    height: 100%; 
+    padding: 20px;
+}
+main {
+    background-color: #222; 
+    padding: 20px;
+    display: grid ;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+aside {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.crypto{
+    
+    padding: 10px;
+    border: 1px solid rgb(48, 45, 45);
+    background-color: rgb(0,0,0.3 );
+    border-radius: 10%;
+    height: 20%;
+    text-align:left;
+}
+.crypto h1,p{
+    padding: 15px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    padding: 20px;
+    border: 1px solid rgb(48, 45, 45);
+    background-color: rgb(0,0,0.3 );
+    border-radius: 10%;
+    height: auto;
+   width: auto;
+    text-align:left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+.news-item {
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.card h2 {
+    padding: 10px;
+
+    text-align: center;
+}
+.xrp {
+    border: 1px solid rgb(48, 45, 45);
+    background-color: rgb(0,0,0.3 );
+    padding-top: 20px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    
+}
+@media screen and (max-width:768px){
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rgb(66, 65, 75);
+        padding: 10px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .crypto {
+        border: 1px solid rgb(48, 45, 45);
+        background-color: rgb(0, 0, 0.3);
+        border-radius: 10%;
+        height: 100%;
+        gap: 10px;
+    }
+
+    .reseau-social ul {
+        padding-right: 20px;
+    }
+
+    nav {
+        text-align: left;
+    }
+
+    nav ul {
+        font-size: 14px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .xrp {
+        display: block;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .news-item {
+        padding: 10px;
+    }
+}
+    
