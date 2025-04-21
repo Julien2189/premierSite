@@ -187,5 +187,9 @@ aside {
     .news-item {
         padding: 10px;
     }
+     aside {
+        align-items: center;
+    }
+    
 }
     
