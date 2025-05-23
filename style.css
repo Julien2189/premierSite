@@ -29,7 +29,7 @@ a {
     header {
         background-color: aqua;
         width: auto;
-        height: 100vh;
+        height: 100%;
     }
     .navbar{
         background-color: rgb(30, 31, 31,0.5);
